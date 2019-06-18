@@ -8,7 +8,7 @@ LABEL maintainer="maintainer: JCD <jcd717@outlook.com>" \
 COPY heartbeat.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-ARG hbs=1
+ARG hbs=4
 ENV HEARTBEATSTEP $hbs
 EXPOSE 1234/udp 4321/tcp
 
